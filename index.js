@@ -1,6 +1,6 @@
 const { Client, createAccount, argUint64 } = require('orbs-client-sdk');
 
-const INTERVAL = 60 * 1000;
+const INTERVAL = 30 * 1000;
 const VCHAIN = 1000;
 const NODE_URL = `http://node1.demonet.orbs.com/vchains/${VCHAIN}`;
 
