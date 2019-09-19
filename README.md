@@ -18,8 +18,8 @@ Edit `index.js` file to add another fork process. Your check will run as a separ
 1. `ssh -o StrictHostKeyChecking=no ubuntu@13.57.221.146` [assuming you have a valid certificate to enter]
 1. `cd /opt/health-check/`
 1. `git pull`
-1. [stop previous processes]
-1. `npm start`
+1. Kill previous process `screen -S healthcheck -X quit`
+1. Start a new detached process `screen -dmS healthcheck npm start`
 
 ## Licence
 MIT.
